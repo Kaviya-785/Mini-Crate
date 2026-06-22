@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-Crate</title>
+    <link rel="icon" href="Icon.png" />
+
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Css Link-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Font Awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar -->
+    <nav class="navbar">
+      <h3>Mini-Crate</h3>
+      
+      <div class="navbar-links">
+        <p class="navbar-link"><a href="index.html">Home</a></p>
+        <p class="navbar-link"><a href="Collections.html">Collections</a></p>
+        <p class="navbar-link"><a href="Contact.html">Contact</a></p>
+      </div>
+
+      <div class="navbar-toggle" onclick="showNav()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </nav>
+
+    <div class="side-navbar">
+      <p style="text-align: right" onclick="closeNav()">
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+     
+      <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="">Home</a></p>
+        <p class="side-navbar-link"><a href="">New Arrivals</a></p>
+        <p class="side-navbar-link"><a href="">Best Seller</a></p>
+        <p class="side-navbar-link"><a href="">Contact Us</a></p>
+      </div>
+
+    </div>
+
+    <!--Products-->
+    <div class="product-section">
+
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="products" id="products">
+
+            <div class="products-box">
+                <img src="https://5.imimg.com/data5/ECOM/Default/2024/12/477179222/OQ/WQ/MR/217528291/5c13bd7f-1507-433e-81b1-62f34676fc85-500x500.jpg" height="220" width="220" alt="Toy">
+                <p>Penguin Plush</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://www.thecharmshop.in/cdn/shop/files/4D81A077-5168-4423-AB77-A3C3B57124DC.jpg?v=1729103273" height="220" width="220" alt="Charms">
+                <p>Phone Charms</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://dmsretail.in/cdn/shop/files/51ogCsJcXfL._SY695_a9c6f45d-ffbf-4828-948a-7a8b9429cd86_1024x1024.jpg?v=1748305606" height="220" width="220" alt="Purse">
+                <p>Jelly Purse</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://www.houseofquirk.com/cdn/shop/files/513iYggLljL_cce126a2-5fec-4194-b873-66d80777d470.jpg?v=1708596376" height="220" width="220" alt="Desk">
+                <p>Desk Organizer</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://piinklemon.in/cdn/shop/files/20_d7d54e79-e431-4c4e-a038-7590398edde9.png?v=1745768538&width=1445" height="220" width="220" alt="Note">
+                <p>Pocket Dairy</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://gadgetsstore.co.in/wp-content/uploads/2023/10/24-a.jpg" height="220" width="220">
+                <p>Airpods Case</p>
+            </div>
+            <div class="products-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnbLzMDWZMXnOt155VQoEpM-30wV1gjteqCQ&s" height="220" width="220" alt="Water Bottle">
+                <p>Water Bottle</p>
+            </div>
+
+             <div class="products-box">
+                <img src="https://www.tinyminymo.com/cdn/shop/files/Smiling-Frog-Keychain-without-Lanyard-9_1200x1200.png?v=1741539060" height="220" width="220" alt="Water Bottle">
+                <p>Keychain</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://images.woodenstreet.de/image/data/home-decors/planters/artificial-combo-of-2-mini-plants-with-thin-long-leaves-with-red-and-purple-lily-flowers/1.jpg" height="220" width="220" alt="Water Bottle">
+                <p>Flower Decors</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://i.etsystatic.com/37671913/r/il/fa006e/5396625077/il_570xN.5396625077_kgkm.jpg" height="220" width="220" alt="Anime">
+                <p>Anime Collectibles</p>
+            </div>
+        </div>
+    </div>
+
+  <!--Footer-->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-box1">
+        <h3 class="headingtext">Mini-Crate</h3>
+        <p>Bringing you timeless trends and effortless fashion for every moment 🤍</p>
+        <div class="footer-icon-container">
+          <i class="fa-brands fa-instagram" style="color: #ffff;"></i>
+          <i class="fa-brands fa-facebook" style="color: #ffff;"></i>
+          <i class="fa-brands fa-twitter" style="color: #ffff;"></i>
+          <i class="fa-brands fa-whatsapp" style="color: #ffff;"></i>
+          <p>Minicrate_2026@gmail.com</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="collections.js"></script>
+  </body>
+</html>
